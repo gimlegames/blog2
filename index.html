@@ -1,0 +1,249 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<!--<meta http-equiv=Content-Type content="text/html;charset=UTF-8" />-->
+<meta http-equiv=Cache-Control content=No-Cache><meta http-equiv=Pragma	content=No-Cache />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="keywords" content="bighunter,shoot,spear,mammoth,hunter,big,Indian,survival,tribe" />
+<meta name="description" content="KAKAROD" />
+<meta name="viewport" content="width=device-width, user-scalable=no">
+<!--<meta name="viewport" content="width=device-width,initial-scale=0.8,maximum-scale=0.8, user-scalable=no">-->
+<!--<meta name="viewport" content="initial-scale=1, maximum-scale=1"> -->
+<link href='http://fonts.googleapis.com/css?family=Roboto:400,500,700' rel='stylesheet' type='text/css'>
+<title>KAKAROD INTERACTIVE</title>
+
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script language=javascript>
+	
+	// store link
+	function link_store(v) {
+		location.href = v;
+		 // if(navigator.userAgent.match(/iPad/i)) 
+	}
+
+	var currentScrollTop = 0;
+	window.onload = function() {
+		$('.container').css('top', "11.8%");
+		alignElements();
+		scrollController();
+
+		$(window).on('scroll', function() {
+			scrollController();
+		});
+
+		$(window).resize(function(){
+			 alignElements();
+		}).resize();
+
+		$( window ).on( "orientationchange", function( event ) {
+			alignElements();
+		});
+	}
+		 
+	function scrollController() {
+		//currentScrollTop = $(window).scrollTop();
+	}
+	
+	// align controls
+	function alignElements() {
+		$('.container').css('left', (window.innerWidth-720)/2);
+	}
+
+	function enterframe() {
+		alignElements();
+	}
+	//setInterval(enterframe,100);
+
+	
+
+	$(document).ready(function() {
+		$(document).bind('touchstart', function(e) {
+		});
+
+		$(document).bind('touchmove', function(e) {
+		});
+
+		$(document).bind('touchend', function(e) {
+			//alignElements();
+		});
+	});
+
+
+</script>
+<style>
+
+
+img {
+     max-width: 100%;
+}
+
+
+.container {
+    /*border: 1px solid #48BAE4; */
+	position:absolute; 
+	width:720px;
+	height:auto;
+	/*left:50%;*/
+	top:5000px; 
+	/*margin-left:-320px;
+	margin-right:320px;*/
+	text-align:center
+}
+
+.containerCompany {
+    /*border: 1px solid #48BAE4; */
+	background-color: #FFFFFF;
+	width:600px;
+	height:950px;
+	display: inline-block;
+}
+
+.containerGame {
+    /*border: 1px solid #48BAE4; */
+	background-color: #FFFFFF;
+	width:600px;
+	height:600px;
+	display: inline-block;
+}
+
+
+
+
+.textArea1 {
+	/*border: 1px solid #48BAE4; */
+	width:350px; 
+	display: inline-block;
+	
+}
+.textArea2 {
+	/*border: 1px solid #48BAE4; */
+	width:400px; 
+	display: inline-block;
+
+}
+
+
+
+.txtStyle1 { 
+	font-family: 'Roboto', Arial; 
+	font-weight: 400; 
+	font-size: 22pt;
+	letter-spacing:-1px;
+	line-height:150%;
+	color:#303232
+}
+
+.txtStyle2 { 
+	font-family: 'Roboto', Arial; 
+	font-weight: 400; 
+	font-size: 14pt;
+	letter-spacing:0px;
+	line-height:120%;
+	color:#303232
+}
+
+
+
+</style>
+</head>
+
+
+<body style="overflow-x:hidden; overflow-y:auto;" bgcolor="#fdb730" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+	<div class="container">
+
+
+		<div class="containerCompany" style="margin-top:0px">
+			<!-- logo -->
+			<div style="margin-top:146px">
+				<img src="./images/logo.png">
+			</div>
+			
+			<!-- company info -->
+			<div class="textArea1" style="margin-top:27px">
+				<h1 class="txtStyle1" style="color:#925b2d">KAKAROD INTERACTIVE is an indie game studio in South Korea. We create games for mobile devices.<br>If you have a support enquiry, contact us.</h1>
+			</div>
+
+			<!-- mail -->
+			<div style="margin-top:8px">
+				<a href="mailto:contact@kakarod.com">
+					<img src="./images/icon_email.png" alt="contact@kakarod.com" title="contact@kakarod.com" >
+				</a>
+			</div>
+		</div>
+
+
+
+		<div class="containerGame" style="margin-top:20px">
+			<!-- logo -->
+			<div style="margin-top:20px">
+				<a href="https://www.facebook.com/bighuntergame">
+					<img src="./images/game_bighunter.png">
+				</a>
+			</div>
+
+			<div style="float:left;margin-top:19px;margin-left:108px">
+				<a href="https://itunes.apple.com/app/id1104846972">
+					<img src="./images/icon_appstore.png" >
+				</a>
+			</div>
+			<div style="float:right;margin-top:19px;margin-right:108px">
+				<a href="https://play.google.com/store/apps/details?id=com.kakarod.bighunter">
+					<img src="./images/icon_google.png">
+				</a>
+			</div>
+		</div>
+
+
+
+		<div class="containerGame" style="margin-top:20px">
+			<!-- logo -->
+			<div style="margin-top:20px">
+				<a href="https://www.facebook.com/inchbyinchgame">
+					<img src="./images/game_inchbyinch.png">
+				</a>
+			</div>
+			
+			<div style="float:left;margin-top:19px;margin-left:108px">
+				<a href="http://itunes.apple.com/app/id995317104">
+					<img src="./images/icon_appstore.png" >
+				</a>
+			</div>
+			<div style="float:right;margin-top:19px;margin-right:108px">
+				<a href="http://play.google.com/store/apps/details?id=com.kakarod.inchbyinch">
+					<img src="./images/icon_google.png">
+				</a>
+			</div>
+		</div>
+
+
+
+		<div class="containerGame" style="margin-top:20px">
+			<!-- logo -->
+			<div style="margin-top:20px">
+				<a href="https://www.facebook.com/rollingcoins">
+					<img src="./images/game_rollingcoins.png">
+				</a>
+			</div>
+			<div style="margin-top:19px">
+				<a href="https://itunes.apple.com/app/id952764370">
+					<img src="./images/icon_appstore.png" >
+				</a>
+			</div>
+			
+		</div>
+
+		
+
+		<div class="textArea2" style="margin-top:20px">
+			<h1 class="txtStyle2" style="color:#FFFFFF">@ 2016 KAKAROD INTERACTIVE,CO.<br>ALL RIGHT RESERVED.</h1>
+		</div>
+
+
+		<div style="width:100px;height:100px">
+		</div>
+
+
+	</div>
+</body>
+</html>
